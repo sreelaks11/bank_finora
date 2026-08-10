@@ -1,0 +1,695 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css">
+
+     
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+</head>
+<body class="bg-green-50">
+
+
+<header class="fixed w-full z-20 top-0 start-0">
+  <nav class="bg-green-100">
+      <div class="flex flex-wrap justify-between items-center mx-auto max-w-screen-xl p-4">
+          <a href="https://flowbite.com" class="flex items-center space-x-3 rtl:space-x-reverse">
+              <span class="self-center  text-heading  whitespace-nowrap font-bold text-3xl"> <i class="fa-solid fa-building-columns"></i> Finora Bank</span>
+          </a>
+          <div class="flex items-center space-x-6 rtl:space-x-reverse">
+              <a href="./register.html" class="text-xl font-medium text-fg-brand hover:underline"><i class="fa-solid fa-user"></i> Register</a>
+              <a href="./login.html" class="text-xl font-medium text-fg-brand hover:underline"> <i class="fa-solid fa-circle-user"></i> Login</a>
+          </div>
+      </div>
+  </nav>
+
+</header>
+
+
+<section class="min-h-screen flex items-center">
+    <div class="w-full flex items-center justify-between">
+        <div class="w-[48%] text-center text-green-500">
+            <h1 class="text-6xl font-bold text-green-900">Banking Made simple</h1>
+            <p class="mt-10 text-justify ml-20 text-green-800">Manage your money with secure, fast, and reliable digital banking services.
+Enjoy simple, convenient banking designed to keep your finances under control.</p>
+            <button class="mt-10 w-40 h-15 rounded-3xl bg-green-200 text-green-800 font-bold">Open an Account</button>
+        </div>
+        <div class="w-[48%] text-center">
+            <img class="gap-4 width-full" src="./Online Payment (1).svg" alt="">
+        </div>
+    </div>
+</section>
+
+
+
+
+
+<section class="py-16 sm:py-20">
+
+    <h1 class="text-3xl sm:text-4xl text-center font-bold text-green-700 mb-12 sm:mb-16"
+        data-aos="fade-up">
+        Our Banking Services
+    </h1>
+
+
+    <div class="flex flex-col md:flex-row justify-center items-center gap-8 px-5">
+
+
+        <div class="w-full max-w-sm text-center p-8 rounded-2xl shadow-lg
+                    hover:-translate-y-3 hover:shadow-2xl transition duration-300"
+             data-aos="fade-up">
+
+            <div class="text-5xl text-green-600 mb-6">
+                📱
+            </div>
+
+            <h2 class="text-2xl font-bold mb-4">
+                Mobile Banking
+            </h2>
+
+            <p class="text-gray-600">
+                Access your account, transfer funds, and pay bills
+                with our secure mobile app.
+            </p>
+
+        </div>
+
+
+        <div class="w-full max-w-sm text-center p-8 rounded-2xl shadow-lg
+                    hover:-translate-y-3 hover:shadow-2xl transition duration-300"
+             data-aos="fade-up"
+             data-aos-delay="200">
+
+            <div class="text-5xl text-green-600 mb-6">
+                🛡️
+            </div>
+
+            <h2 class="text-2xl font-bold mb-4">
+                Secure Transactions
+            </h2>
+
+            <p class="text-gray-600">
+                Enjoy peace of mind with advanced encryption and
+                fraud detection.
+            </p>
+
+        </div>
+
+
+        <div class="w-full max-w-sm text-center p-8 rounded-2xl shadow-lg
+                    hover:-translate-y-3 hover:shadow-2xl transition duration-300"
+             data-aos="fade-up"
+             data-aos-delay="400">
+
+            <div class="text-5xl text-green-600 mb-6">
+                💳
+            </div>
+
+            <h2 class="text-2xl font-bold mb-4">
+                Flexible Payments
+            </h2>
+
+            <p class="text-gray-600">
+                Choose from multiple payment options tailored to
+                your needs.
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- Banking Made Easy -->
+
+<section class="py-16 px-5 bg-green-50">
+
+    <div class="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-10 items-center">
+
+        <!-- Left Side -->
+        <div data-aos="fade-right">
+
+            <h1 class="text-3xl sm:text-4xl font-bold text-green-700 mb-5">
+                Banking Made Easy
+            </h1>
+
+            <p class="text-gray-600 text-lg mb-8">
+                Manage your money with simple, secure, and convenient
+                banking services designed for your everyday needs.
+            </p>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-5">
+
+                <!-- Feature 1 -->
+                <div class="bg-white p-5 rounded-xl shadow
+                            hover:-translate-y-2 hover:shadow-xl
+                            transition duration-300"
+                     data-aos="fade-up">
+
+                    <h2 class="font-bold text-green-700 mb-2">
+                        Easy Account Management
+                    </h2>
+
+                    <p class="text-gray-600">
+                        Check your balance and manage your account easily.
+                    </p>
+
+                </div>
+
+
+                <!-- Feature 2 -->
+                <div class="bg-white p-5 rounded-xl shadow
+                            hover:-translate-y-2 hover:shadow-xl
+                            transition duration-300"
+                     data-aos="fade-up"
+                     data-aos-delay="150">
+
+                    <h2 class="font-bold text-green-700 mb-2">
+                        Quick Transfers
+                    </h2>
+
+                    <p class="text-gray-600">
+                        Transfer money quickly and conveniently.
+                    </p>
+
+                </div>
+
+
+                <!-- Feature 3 -->
+                <div class="bg-white p-5 rounded-xl shadow
+                            hover:-translate-y-2 hover:shadow-xl
+                            transition duration-300"
+                     data-aos="fade-up"
+                     data-aos-delay="300">
+
+                    <h2 class="font-bold text-green-700 mb-2">
+                        Secure Banking
+                    </h2>
+
+                    <p class="text-gray-600">
+                        Your transactions are protected with secure systems.
+                    </p>
+
+                </div>
+
+
+                <!-- Feature 4 -->
+                <div class="bg-white p-5 rounded-xl shadow
+                            hover:-translate-y-2 hover:shadow-xl
+                            transition duration-300"
+                     data-aos="fade-up"
+                     data-aos-delay="450">
+
+                    <h2 class="font-bold text-green-700 mb-2">
+                        Anytime Access
+                    </h2>
+
+                    <p class="text-gray-600">
+                        Access your banking services whenever you need.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- Right Side -->
+        <div data-aos="fade-left">
+
+            <div class="bg-white rounded-3xl shadow-xl p-10 text-center
+                        hover:shadow-2xl transition duration-300">
+
+                <div class="text-7xl mb-6">
+                    🏦
+                </div>
+
+                <h2 class="text-3xl font-bold text-green-700 mb-4">
+                    Your Money, Your Control
+                </h2>
+
+                <p class="text-gray-600 text-lg">
+                    Stay in control of your finances with reliable,
+                    simple, and secure digital banking.
+                </p>
+
+                <button class="mt-7 bg-green-600 text-white px-7 py-3 rounded-lg
+                               hover:bg-green-700 transition duration-300">
+                    Get Started
+                </button>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+
+
+
+
+
+
+<!-- Our Plans -->
+
+<section class="py-16 px-5 bg-green-50">
+
+    <h1 class="text-3xl sm:text-4xl font-bold text-center text-green-700 mb-4"
+        data-aos="fade-up">
+        Our Plans
+    </h1>
+
+    <p class="text-center text-gray-600 mb-12"
+       data-aos="fade-up">
+        Choose a banking plan that suits your needs
+    </p>
+
+
+    <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8">
+
+
+        <!-- Basic Plan -->
+        <div class="bg-white p-8 rounded-2xl shadow-lg text-center
+                    hover:-translate-y-3 hover:shadow-2xl
+                    transition duration-300"
+             data-aos="fade-up">
+
+            <h2 class="text-2xl font-bold text-green-700 mb-4">
+                Basic
+            </h2>
+
+            <p class="text-4xl font-bold mb-6">
+                ₹0
+                <span class="text-sm text-gray-500">/month</span>
+            </p>
+
+            <p class="text-gray-600 mb-6">
+                Perfect for simple everyday banking.
+            </p>
+
+            <ul class="text-gray-600 space-y-3 mb-8">
+                <li>✓ Free Account</li>
+                <li>✓ Online Banking</li>
+                <li>✓ Mobile Banking</li>
+                <li>✓ Easy Transfers</li>
+            </ul>
+
+            <button class="bg-green-600 text-white px-7 py-3 rounded-lg
+                           hover:bg-green-700 transition duration-300">
+                Get Started
+            </button>
+
+        </div>
+
+
+        <!-- Premium Plan -->
+        <div class="bg-green-700 text-white p-8 rounded-2xl shadow-xl text-center
+                    hover:-translate-y-3 hover:shadow-2xl
+                    transition duration-300"
+             data-aos="fade-up"
+             data-aos-delay="200">
+
+            <p class="bg-white text-green-700 rounded-full px-4 py-1 inline-block text-sm mb-4">
+                Most Popular
+            </p>
+
+            <h2 class="text-2xl font-bold mb-4">
+                Premium
+            </h2>
+
+            <p class="text-4xl font-bold mb-6">
+                ₹299
+                <span class="text-sm">/month</span>
+            </p>
+
+            <p class="mb-6">
+                More benefits for active banking users.
+            </p>
+
+            <ul class="space-y-3 mb-8">
+                <li>✓ Everything in Basic</li>
+                <li>✓ Higher Transfer Limits</li>
+                <li>✓ Priority Support</li>
+                <li>✓ Extra Rewards</li>
+            </ul>
+
+            <button class="bg-white text-green-700 px-7 py-3 rounded-lg
+                           hover:bg-green-50 transition duration-300">
+                Choose Plan
+            </button>
+
+        </div>
+
+
+        <!-- Business Plan -->
+        <div class="bg-white p-8 rounded-2xl shadow-lg text-center
+                    hover:-translate-y-3 hover:shadow-2xl
+                    transition duration-300"
+             data-aos="fade-up"
+             data-aos-delay="400">
+
+            <h2 class="text-2xl font-bold text-green-700 mb-4">
+                Business
+            </h2>
+
+            <p class="text-4xl font-bold mb-6">
+                ₹599
+                <span class="text-sm text-gray-500">/month</span>
+            </p>
+
+            <p class="text-gray-600 mb-6">
+                Designed for growing businesses.
+            </p>
+
+            <ul class="text-gray-600 space-y-3 mb-8">
+                <li>✓ Business Account</li>
+                <li>✓ Large Transfers</li>
+                <li>✓ Business Support</li>
+                <li>✓ Transaction Reports</li>
+            </ul>
+
+            <button class="bg-green-600 text-white px-7 py-3 rounded-lg
+                           hover:bg-green-700 transition duration-300">
+                Choose Plan
+            </button>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- CTA Section -->
+
+<section class="min-h-screen bg-green-100 flex items-center justify-center px-5 py-16">
+
+    <div class="w-full max-w-3xl bg-green-800 p-8 sm:p-12 rounded-3xl shadow-xl"
+         data-aos="fade-up">
+
+        <h1 class="text-3xl sm:text-4xl md:text-5xl font-bold text-white mb-8">
+            Ready to Experience Modern Banking?
+        </h1>
+
+        <p class="text-white text-base sm:text-lg mb-8">
+            Open your account today and enjoy seamless transactions
+            with Finora Bank.
+        </p>
+
+        <button class="bg-white text-green-700 font-bold px-8 py-4 rounded-xl
+                       hover:bg-green-50 hover:-translate-y-1
+                       transition duration-300">
+            Join Now
+        </button>
+
+    </div>
+
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- Why Choose Us -->
+
+<section class="py-16 px-5 bg-green-50">
+
+    <h1 class="text-3xl sm:text-4xl font-bold text-center text-green-700 mb-12"
+        data-aos="fade-up">
+        Why Choose Finora Bank?
+    </h1>
+
+    <div class="max-w-6xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+
+        <!-- Card 1 -->
+        <div class="bg-white p-7 rounded-2xl text-center shadow
+                    hover:-translate-y-2 hover:shadow-xl
+                    transition duration-300"
+             data-aos="fade-up">
+
+            <div class="text-4xl mb-4">🔒</div>
+
+            <h2 class="text-xl font-bold text-green-700 mb-3">
+                Safe & Secure
+            </h2>
+
+            <p class="text-gray-600">
+                Your money and personal information are always protected.
+            </p>
+
+        </div>
+
+
+        <!-- Card 2 -->
+        <div class="bg-white p-7 rounded-2xl text-center shadow
+                    hover:-translate-y-2 hover:shadow-xl
+                    transition duration-300"
+             data-aos="fade-up"
+             data-aos-delay="150">
+
+            <div class="text-4xl mb-4">⚡</div>
+
+            <h2 class="text-xl font-bold text-green-700 mb-3">
+                Fast Banking
+            </h2>
+
+            <p class="text-gray-600">
+                Make quick and easy transactions anytime, anywhere.
+            </p>
+
+        </div>
+
+
+        <!-- Card 3 -->
+        <div class="bg-white p-7 rounded-2xl text-center shadow
+                    hover:-translate-y-2 hover:shadow-xl
+                    transition duration-300"
+             data-aos="fade-up"
+             data-aos-delay="300">
+
+            <div class="text-4xl mb-4">💳</div>
+
+            <h2 class="text-xl font-bold text-green-700 mb-3">
+                Easy Payments
+            </h2>
+
+            <p class="text-gray-600">
+                Enjoy convenient payment options for your daily needs.
+            </p>
+
+        </div>
+
+
+        <!-- Card 4 -->
+        <div class="bg-white p-7 rounded-2xl text-center shadow
+                    hover:-translate-y-2 hover:shadow-xl
+                    transition duration-300"
+             data-aos="fade-up"
+             data-aos-delay="450">
+
+            <div class="text-4xl mb-4">📱</div>
+
+            <h2 class="text-xl font-bold text-green-700 mb-3">
+                24/7 Access
+            </h2>
+
+            <p class="text-gray-600">
+                Manage your account whenever you need, from any device.
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+
+<!-- Footer -->
+
+<footer class="bg-green-800 text-white px-5 py-12 mt-70">
+
+    <div class="max-w-6xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8"
+         data-aos="fade-up">
+
+        <!-- Bank -->
+        <div>
+            <h2 class="text-2xl font-bold mb-4">
+                🏦 Finora Bank
+            </h2>
+
+            <p class="text-green-100">
+                Simple, secure and convenient banking
+                for your everyday needs.
+            </p>
+        </div>
+
+
+        <!-- Quick Links -->
+        <div>
+            <h2 class="text-xl font-bold mb-4">
+                Quick Links
+            </h2>
+
+            <ul class="space-y-2">
+                <li>
+                    <a href="#" class="hover:text-green-300 transition">
+                        Home
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#" class="hover:text-green-300 transition">
+                        Features
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#" class="hover:text-green-300 transition">
+                        Services
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#" class="hover:text-green-300 transition">
+                        Contact
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+
+        <!-- Services -->
+        <div>
+            <h2 class="text-xl font-bold mb-4">
+                Services
+            </h2>
+
+            <ul class="space-y-2">
+                <li class="hover:text-green-300 transition">
+                    Mobile Banking
+                </li>
+
+                <li class="hover:text-green-300 transition">
+                    Online Banking
+                </li>
+
+                <li class="hover:text-green-300 transition">
+                    Secure Payments
+                </li>
+
+                <li class="hover:text-green-300 transition">
+                    Money Transfer
+                </li>
+            </ul>
+        </div>
+
+
+        <!-- Contact -->
+        <div>
+            <h2 class="text-xl font-bold mb-4">
+                Contact Us
+            </h2>
+
+            <p class="text-green-100 mb-2">
+                📧 support@finorabank.com
+            </p>
+
+            <p class="text-green-100 mb-2">
+                📞 +91 98765 43210
+            </p>
+
+            <p class="text-green-100">
+                📍 Kerala, India
+            </p>
+        </div>
+
+    </div>
+
+
+    <!-- Bottom -->
+    <div class="border-t border-green-700 mt-10 pt-6 text-center text-green-200">
+
+        <p>
+            © 2026 Finora Bank. All Rights Reserved.
+        </p>
+
+    </div>
+
+</footer>
+
+
+
+
+
+
+<!-- AOS -->
+
+<script>
+    AOS.init();
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script>
+    AOS.init();
+</script>
+
+
+
+
+
+</body>
+</html>
