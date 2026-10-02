@@ -13,52 +13,61 @@
 
 <body class="bg-green-100 min-h-screen flex items-center justify-center">
 
-    <div class="bg-white w-96 p-6 rounded-xl shadow-lg text-center">
+   <div class="bg-white w-full max-w-sm mx-4 p-6 rounded-xl shadow-lg text-center">
 
-        <i class="fa-solid fa-building-columns text-green-800 text-5xl"></i>
-        <h1 class="text-3xl font-bold text-green-700 mt-3">
-            My Bank
-        </h1>
-        <p class="text-gray-500 mt-2">
-            Create your account to get started
-        </p>
+    <i class="fa-solid fa-building-columns text-green-800 text-5xl"></i>
 
+    <h1 class="text-3xl font-bold text-green-700 mt-3">
+        My Bank
+    </h1>
 
-
-        <div class="flex mt-8">
-            <span class="bg-green-100 p-3">
-                <i class="fa-solid fa-user text-green-700"></i>
-            </span>
-            <input type="text" id="username" placeholder="Username" class="border w-full px-3 outline-none" autocomplete="off">
-        </div>
+    <p class="text-gray-500 mt-2">
+        Create your account to get started
+    </p>
 
 
-        <div class="flex mt-4">
-            <span class="bg-green-100 p-3">
-                <i class="fa-solid fa-credit-card text-green-700"></i>
-            </span>
-            <input type="text" id="accnum" placeholder="Account Number" class="border w-full px-3 outline-none">
-        </div>
+    <div class="flex mt-8">
+        <span class="bg-green-100 p-3">
+            <i class="fa-solid fa-user text-green-700"></i>
+        </span>
 
-
-        <div class="flex mt-4">
-            <span class="bg-green-100 p-3">
-                <i class="fa-solid fa-lock text-green-700"></i>
-            </span>
-            <input type="password" id="password" placeholder="Password" class="border w-full px-3 outline-none" autocomplete="off">
-        </div>
-
-        
-        <button class="bg-green-600 text-white w-full py-2 mt-6 rounded hover:bg-green-900" onclick="register()">
-            Register
-        </button>
-
-        <p class="mt-5 text-gray-600">
-            Already have an account?
-            <a href="#" class="text-green-600 font-bold" >Sign in</a>
-        </p>
-
+        <input type="text" id="username" placeholder="Username"
+            class="border w-full px-3 outline-none" autocomplete="off">
     </div>
+
+
+    <div class="flex mt-4">
+        <span class="bg-green-100 p-3">
+            <i class="fa-solid fa-credit-card text-green-700"></i>
+        </span>
+
+        <input type="text" id="accnum" placeholder="Account Number"
+            class="border w-full px-3 outline-none">
+    </div>
+
+
+    <div class="flex mt-4">
+        <span class="bg-green-100 p-3">
+            <i class="fa-solid fa-lock text-green-700"></i>
+        </span>
+
+        <input type="password" id="password" placeholder="Password"
+            class="border w-full px-3 outline-none" autocomplete="off">
+    </div>
+
+
+    <button class="bg-green-600 text-white w-full py-2 mt-6 rounded hover:bg-green-900"
+        onclick="register()">
+        Register
+    </button>
+
+
+    <p class="mt-5 text-gray-600">
+        Already have an account?
+        <a href="#" class="text-green-600 font-bold">Sign in</a>
+    </p>
+
+</div>
 
 </body>
 </html>

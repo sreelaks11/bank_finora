@@ -14,9 +14,16 @@ function register(){
     else{
     localStorage.setItem(details.accnumber,JSON.stringify(details))
     alert("registered successfully")
+
+    localStorage.setItem('username',username.value)
+    
     window.location.href="login.html"
     }
 }
+
+
+
+
 
 function login(){
     const loging={
@@ -31,8 +38,10 @@ else{
     console.log(detail);
     if(detail){
          if(detail.accnumber==loging.acc && detail.pass==loging.psd){
-        alert("login successfull")
-        window.location.href="amount.html"
+            alert("login successfull")
+
+            localStorage.setItem("currentuser",loging.acc)
+            window.location.href="amount.html"
     }
     else{
         alert("wrong password")
@@ -43,17 +52,43 @@ else{
     }
 }
 }
+
+
+
+
+
+
+
 let total=0
 function balance(){
     const bal={
         am:amount.value,
         pa:pswrd.value
     }
-    let amo=Number(amount.value)
-    total=total+amo
-        result.innerHTML = ` balance: ${total}`
-        
+    if(bal.pa==''){
+        alert("please enter the password")
+    }
+    else if(bal.am==''){
+        alert("enter the amount")
+    }
+    else{
+     let detai = JSON.parse(localStorage.getItem(localStorage.getItem("currentuser")))
+            if(detai.pass==bal.pa){
+                let amo=Number(amount.value)
+                total=total+amo
+                result.innerHTML = ` balance: ${total}`
+                addHistory("Deposit", amo, total)
+            }
+            else{
+                alert("incorrect password")
+            }
+    } 
 }
+
+
+
+
+
 
 
 function withdraw(){
@@ -61,16 +96,38 @@ function withdraw(){
         amou:AMO.value,
         paas:PAS.value
     }
-    let withd=Number(AMO.value)
-    total=total-Number(withd)
-    balan.innerHTML=` balance : ${total}`
+    if(bala.amou=='' ||bala.paas==''){
+        alert("please fill the field")
+    }
+   else{
+   let det = JSON.parse(localStorage.getItem(localStorage.getItem("currentuser")))
+    if(bala.amou<=total){
+        if(det.pass==bala.paas){
+        let withd=Number(AMO.value)
+        total=total-Number(withd)
+        balan.innerHTML=` balance : ${total}`
+        addHistory("Withdrawal", withd, total)
+    }else{
+        alert("incorrect password")
+    }
+    }
+    else{
+        alert("insufficient bank balance")
+    }
+   }
 }
+
+
+
+
+
+
 
 function addHistory(type, amount, balance){
 
     let date = new Date().toLocaleString()
 
-    history.innerHTML += `
+    balhistory.innerHTML += `
         <tr>
             <td class="p-3 border-b">${date}</td>
             <td class="p-3 border-b">${type}</td>
@@ -79,3 +136,14 @@ function addHistory(type, amount, balance){
         </tr>
     `
 }
+
+
+
+
+function logout(){
+    localStorage.clear()
+    window.location.href='index.html'
+}
+
+
+
