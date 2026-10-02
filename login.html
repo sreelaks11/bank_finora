@@ -11,13 +11,32 @@
     <title>Register</title>
 </head>
 
-<body class="bg-green-100 min-h-screen flex items-center justify-center">
+
+
+
+<header class="fixed w-full z-20 top-0 start-0">
+    <nav class="bg-green-100">
+        <div class="w-full flex flex-col sm:flex-row sm:justify-between sm:items-center mx-auto px-4 sm:px-6 md:px-8 py-4 gap-3">
+
+            <a href="https://flowbite.com" class="flex items-center">
+                <span class="font-bold text-lg sm:text-2xl md:text-3xl whitespace-nowrap">
+                    <i class="fa-solid fa-building-columns"></i> Finora Bank
+                </span>
+            </a>
+
+          
+
+        </div>
+    </nav>
+</header>
+<body  style="background-image: url('./bank_bg.png');"
+ class="bg-green-100 min-h-screen flex items-center justify-center">
 <div class="bg-white w-full max-w-sm mx-4 p-6 rounded-xl shadow-lg text-center">
 
     <i class="fa-solid fa-building-columns text-green-800 text-5xl"></i>
 
     <h1 class="text-3xl font-bold text-green-700 mt-3">
-        My Bank
+        Finora Bank
     </h1>
 
     <p class="text-gray-500 mt-2">
@@ -50,12 +69,10 @@
         onclick="login()">
         Login
     </button>
-
-
-    <p class="mt-5 text-gray-600">
-        Already have an account?
-        <a href="#" class="text-green-600 font-bold">Sign in</a>
-    </p>
+<p class="mt-5 text-gray-600">
+    New to Finora Bank?
+    <a href="./register.html" class="text-green-600 font-bold hover:underline">Register now</a>
+</p>
 
 </div>
 </body>
